@@ -48,7 +48,7 @@ for destination_code in destinations:
         emails = [row["email"] for row in users]
         names = [row["firstName"] for row in users]
 
-        message = f"LOW PRICE ALERT! Only ${flight.price} to fly from {flight.origin_city}-{flight.origin_airport} to {flight.destination_city}-{flight.destination_airport}, from {flight.out_date} to {flight.return_date}."
+        message = f"New Low Price Flight Alert! Only ${flight.price} to fly from {flight.origin_city}-{flight.origin_airport} to {flight.destination_city}-{flight.destination_airport}, from {flight.out_date} to {flight.return_date}."
 
         if flight.stop_overs > 0:
             message += f"\nFlight has {flight.stop_overs} stop over, via {flight.via_city}."
